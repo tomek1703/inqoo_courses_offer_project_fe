@@ -4,8 +4,8 @@ import {NavBarComponent} from "./nav-bar/nav-bar.component";
 import { CardComponent } from './card/card.component';
 import { ButtonComponent } from './button/button.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
-import { TooltipComponent } from './tooltip/tooltip.component';
 import { FormComponent } from './form/form.component';
+import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
 
 
 
@@ -15,7 +15,6 @@ import { FormComponent } from './form/form.component';
     CardComponent,
     ButtonComponent,
     CheckboxComponent,
-    TooltipComponent,
     FormComponent,
   ],
 
@@ -24,13 +23,9 @@ import { FormComponent } from './form/form.component';
     CardComponent
   ],
 
-    exports: [
-        NavBarComponent,
-        CheckboxComponent
-    ],
-
   imports: [
-    CommonModule
+    CommonModule,
+    NgbTooltipModule
   ]
 })
 export class SharedModule { }
