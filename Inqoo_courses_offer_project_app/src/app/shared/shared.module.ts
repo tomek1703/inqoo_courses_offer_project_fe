@@ -5,7 +5,7 @@ import { CardComponent } from './card/card.component';
 import { ButtonComponent } from './button/button.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { FormComponent } from './form/form.component';
-import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
+import {RouterModule} from "@angular/router";
 
 
 
@@ -25,7 +25,7 @@ import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
 
   imports: [
     CommonModule,
-    NgbTooltipModule
+    RouterModule
   ]
 })
 export class SharedModule { }
