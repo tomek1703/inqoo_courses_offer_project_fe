@@ -1,0 +1,18 @@
+#logo{
+  max-width: fit-content;
+}
+
+#logo>img{
+  max-width: 200px;
+}
+
+#nav-container{
+  background-color: #5800FF;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.nav-link{
+  color: white;
+}
