@@ -11,6 +11,7 @@ import { SalesPageComponent } from './pages/all-courses-page/sales-page/sales-pa
 import { ItCoursesComponent } from './pages/all-courses-page/it-courses/it-courses.component';
 import { OtherCoursesComponent } from './pages/all-courses-page/other-courses/other-courses.component';
 import { SummaryPageComponent } from './pages/summary-page/summary-page.component';
+import { CoursesSelectionPageComponent } from './pages/courses-selection-page/courses-selection-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SummaryPageComponent } from './pages/summary-page/summary-page.componen
     SalesPageComponent,
     ItCoursesComponent,
     OtherCoursesComponent,
-    SummaryPageComponent
+    SummaryPageComponent,
+    CoursesSelectionPageComponent
   ],
   imports: [
     BrowserModule,
