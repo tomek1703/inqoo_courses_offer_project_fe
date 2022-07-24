@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {NavBarModule} from "../nav-bar/nav-bar.module";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AllCoursesPageComponent } from './pages/all-courses-page/all-courses-page.component';
 import { ITComponent } from './pages/all-courses-page/it/it.component';
 import { SalesComponent } from './pages/all-courses-page/sales/sales.component';
@@ -28,7 +30,9 @@ import { CoursesSelectionPageComponent } from './pages/courses-selection-page/co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NavBarModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
