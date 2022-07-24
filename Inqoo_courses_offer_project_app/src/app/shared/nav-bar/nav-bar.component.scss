@@ -1,5 +1,9 @@
 #logo{
-  float: left;
+  position: relative;
+}
+
+#logo>img{
+  width: 250px;
 }
 
 #nav-container{
