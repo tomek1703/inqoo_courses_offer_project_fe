@@ -18,9 +18,10 @@ import { FormComponent } from './form/form.component';
     TooltipComponent,
     FormComponent,
   ],
-  exports: [
-    NavBarComponent
-  ],
+    exports: [
+        NavBarComponent,
+        CheckboxComponent
+    ],
   imports: [
     CommonModule
   ]
