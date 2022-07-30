@@ -1,6 +1,6 @@
 .card {
-  width: 18rem;
-  height: 18rem;
+  width: 70vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-items: center;
@@ -12,9 +12,9 @@
   overflow: hidden;
 
 }
-.card:hover{
-  transform: scale(1.1);
-}
+//.card:hover{
+//  transform: scale(1.1);
+//}
 
 
 
