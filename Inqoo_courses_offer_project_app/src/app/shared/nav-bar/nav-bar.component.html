@@ -1,5 +1,5 @@
 <div id="nav-container">
-  <a id="logo" class="nav-link" href="#"><img src="assets/logo-inqoo.png.webp" alt="logo"></a>
+  <a id="logo" class="nav-link" routerLink="category-page"><img src="assets/logo-inqoo.png" alt="logo"></a>
   <ul class="nav justify-content-center">
     <li class="nav-item" *ngFor="let link of routes">
       <a class="nav-link" routerLink={{link.route}} routerLinkActive="active">{{link.label}}</a>
