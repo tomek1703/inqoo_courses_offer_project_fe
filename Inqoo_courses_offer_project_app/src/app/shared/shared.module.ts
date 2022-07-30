@@ -22,7 +22,9 @@ import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
   exports: [
     NavBarComponent,
     CardComponent,
-    ButtonComponent
+    ButtonComponent,
+    CheckboxComponent,
+    FormComponent
   ],
 
     imports: [
