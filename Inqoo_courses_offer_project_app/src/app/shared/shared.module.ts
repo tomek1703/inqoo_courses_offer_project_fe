@@ -20,7 +20,8 @@ import {RouterModule} from "@angular/router";
 
   exports: [
     NavBarComponent,
-    CardComponent
+    CardComponent,
+    ButtonComponent
   ],
 
   imports: [

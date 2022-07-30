@@ -2,4 +2,19 @@
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
+  gap: 2em;
+  margin-top: 20px;
+
+}
+.card1{
+  background-image: url("~CardPicture/1.jpg");
+}
+.card2{
+  background-image: url("~CardPicture/2.png");
+}
+.card3{
+  background-image: url("~CardPicture/3.jpg");
+}
+.card4{
+  background-image: url("~CardPicture/4.jpg");
 }
