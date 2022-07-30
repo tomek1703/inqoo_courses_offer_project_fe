@@ -1,6 +1,8 @@
 <div class="grid-container">
-  <app-card class="card card1"> </app-card>
-  <app-card class="card card2"></app-card>
-  <app-card class="card card3"></app-card>
-  <app-card class="card card4"></app-card>
+  <app-card class="card"
+  *ngFor="let item of items"
+  [title]="item.title"
+  [description]="item.description"
+></app-card>
 </div>
+
