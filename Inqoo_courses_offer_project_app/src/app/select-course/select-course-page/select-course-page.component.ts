@@ -10,19 +10,19 @@ export class SelectCoursePageComponent{
 public subCategories: SubCategory[] = [
   {
     id: 0,
-    title: "Basics"
+    title: "Java"
   },
   {
     id: 1,
-    title: "Advanced"
+    title: "JS"
   },
   {
     id: 2,
-    title: "Certification"
+    title: "CSS"
   },
   {
     id: 3,
-    title: "Master"
+    title: "HTML"
   }
 
 ]
