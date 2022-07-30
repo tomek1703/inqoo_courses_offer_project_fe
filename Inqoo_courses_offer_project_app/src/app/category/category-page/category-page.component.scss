@@ -1,0 +1,9 @@
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 4em;
+  margin-top: 3em;
+  margin-bottom: 20px;
+}

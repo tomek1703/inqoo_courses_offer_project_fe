@@ -21,7 +21,8 @@ import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
 
   exports: [
     NavBarComponent,
-    CardComponent
+    CardComponent,
+    ButtonComponent
   ],
 
     imports: [
