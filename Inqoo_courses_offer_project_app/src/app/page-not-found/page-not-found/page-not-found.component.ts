@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {interval, Subscription} from "rxjs";
+import {timer, Subscription} from "rxjs";
 import {Router} from "@angular/router";
 import {RoutesConfig} from "../../app-routing.module";
 
@@ -20,7 +20,7 @@ export class PageNotFoundComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.timerSubscription = interval(1000).subscribe(() => this.setTimer())
+    this.timerSubscription = timer(1000, 1000).subscribe(() => this.setTimer())
   }
 
   ngOnDestroy() {
