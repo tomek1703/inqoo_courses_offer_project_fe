@@ -7,4 +7,5 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 })
 export class CardComponent{
   @Input() title: String = "Test";
+  @Input() description: String = "Test description";
 }
