@@ -6,6 +6,7 @@ import { ButtonComponent } from './button/button.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { FormComponent } from './form/form.component';
 import {RouterModule} from "@angular/router";
+import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
 
 
 
@@ -23,9 +24,10 @@ import {RouterModule} from "@angular/router";
     CardComponent
   ],
 
-  imports: [
-    CommonModule,
-    RouterModule
-  ]
+    imports: [
+        CommonModule,
+        RouterModule,
+        NgbTooltipModule
+    ]
 })
 export class SharedModule { }
