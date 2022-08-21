@@ -7,6 +7,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { FormComponent } from './form/form.component';
 import {RouterModule} from "@angular/router";
 import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -17,6 +18,7 @@ import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
     ButtonComponent,
     CheckboxComponent,
     FormComponent,
+    FooterComponent,
   ],
 
   exports: [
@@ -24,7 +26,8 @@ import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
     CardComponent,
     ButtonComponent,
     CheckboxComponent,
-    FormComponent
+    FormComponent,
+    FooterComponent
   ],
 
     imports: [
