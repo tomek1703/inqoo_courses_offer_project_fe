@@ -8,10 +8,11 @@ import {SharedModule} from "./shared/shared.module";
 import {CategoryModule} from "./category/category.module";
 import {SummaryModule} from "./summary/summary.module";
 import {SelectCourseModule} from "./select-course/select-course.module";
+import {HomePageModule} from "./home-page/home-page.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +22,7 @@ import {SelectCourseModule} from "./select-course/select-course.module";
     CategoryModule,
     SummaryModule,
     SelectCourseModule,
+    HomePageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,7 +14,7 @@ export class PageNotFoundComponent implements OnInit, OnDestroy {
 
   private timerSubscription: Subscription | undefined;
 
-  setTimer = () => this.timer > 0 ? this.timer -= 1 : this.router.navigate([RoutesConfig.category]);
+  setTimer = () => this.timer > 0 ? this.timer -= 1 : this.router.navigate([RoutesConfig.homePage]);
 
   constructor(private router: Router) {
   }

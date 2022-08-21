@@ -4,19 +4,22 @@ import {CategoryPageComponent} from "./category/category-page/category-page.comp
 import {PageNotFoundComponent} from "./page-not-found/page-not-found/page-not-found.component";
 import {SelectCoursePageComponent} from "./select-course/select-course-page/select-course-page.component";
 import {SummaryComponent} from "./summary/summary/summary.component";
+import {HomePageComponent} from "./home-page/home-page/home-page.component";
 
 export const enum RoutesConfig {
   category  = 'category-page',
   select = 'select-course',
   summary = 'summary',
-  inqooDeck = 'inqoo-deck'
+  inqooDeck = 'inqoo-deck',
+  homePage= 'home-page'
 }
 
 const routes: Routes = [
+  {path: RoutesConfig.homePage, component: HomePageComponent},
   {path: RoutesConfig.category, component: CategoryPageComponent},
   {path: RoutesConfig.select, component: SelectCoursePageComponent},
   {path: RoutesConfig.summary, component: SummaryComponent},
-  {path: '', redirectTo: '/category-page', pathMatch: 'full'},
+  {path: '', redirectTo: RoutesConfig.homePage, pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent},
 ];
 
