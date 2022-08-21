@@ -7,6 +7,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { FormComponent } from './form/form.component';
 import {RouterModule} from "@angular/router";
 import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
+import { BannerComponent } from './banner/banner.component';
 
 
 
@@ -17,15 +18,17 @@ import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
     ButtonComponent,
     CheckboxComponent,
     FormComponent,
+    BannerComponent,
   ],
 
-  exports: [
-    NavBarComponent,
-    CardComponent,
-    ButtonComponent,
-    CheckboxComponent,
-    FormComponent
-  ],
+    exports: [
+        NavBarComponent,
+        CardComponent,
+        ButtonComponent,
+        CheckboxComponent,
+        FormComponent,
+        BannerComponent
+    ],
 
     imports: [
         CommonModule,
