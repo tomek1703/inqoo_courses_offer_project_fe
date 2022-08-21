@@ -6,5 +6,5 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./checkbox.component.scss']
 })
 export class CheckboxComponent {
-  course:String = "Test";
+  @Input() courseName:String = "Test";
 }

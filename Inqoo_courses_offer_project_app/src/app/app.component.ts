@@ -10,13 +10,18 @@ export class AppComponent {
   title = 'Inqoo_courses_offer_project_app';
   routes: { label: string, route: string }[] = [
     {
-      label: 'category',
+      label: 'Homepage',
+      route: RoutesConfig.homePage
+    },
+    {
+      label: 'Category',
       route: RoutesConfig.category
     }, {
-      label: 'select-course',
+      label: 'Select course',
       route: RoutesConfig.select
     }, {
-      label: 'summary',
+      label: 'Summary',
       route: RoutesConfig.summary
-    }];
+    },
+    ];
 }

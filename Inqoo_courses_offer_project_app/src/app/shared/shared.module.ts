@@ -7,7 +7,6 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { FormComponent } from './form/form.component';
 import {RouterModule} from "@angular/router";
 import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
-import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -18,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
     ButtonComponent,
     CheckboxComponent,
     FormComponent,
+    BannerComponent,
     FooterComponent,
   ],
 
@@ -29,6 +29,14 @@ import { FooterComponent } from './footer/footer.component';
     FormComponent,
     FooterComponent
   ],
+    exports: [
+        NavBarComponent,
+        CardComponent,
+        ButtonComponent,
+        CheckboxComponent,
+        FormComponent,
+        BannerComponent
+    ],
 
     imports: [
         CommonModule,
