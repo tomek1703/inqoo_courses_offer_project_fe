@@ -9,6 +9,5 @@ import {CategoryPageComponent} from "../../category/category-page/category-page.
 export class CardComponent{
   @Input() title: String = "Test";
   @Input() description: String = "Test description";
-
   @Input() background: String = "url('../../assets/card1.jpg')";
 }

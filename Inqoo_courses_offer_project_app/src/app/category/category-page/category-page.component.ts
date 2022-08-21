@@ -17,7 +17,7 @@ export class CategoryPageComponent{
     id: 1,
     title: "Sales",
     description: "sales desc",
-    background: "url('../../assets/card2.png')"
+    background: "url('../../assets/card2.jpg')"
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ export class CategoryPageComponent{
     id: 3,
     title: "Other",
     description: "other desc",
-    background: "url('../../assets/card4.jpg')"
+    background: "url('../../assets/card4.png')"
   }];
 
 }
