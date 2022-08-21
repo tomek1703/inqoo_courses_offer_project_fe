@@ -1,1 +1,9 @@
-<p>select-course-page works!</p>
+<div class="subCategory">
+<div *ngFor="let course of subCategories">
+  <h2>{{course.title}}</h2>
+  <app-checkbox></app-checkbox>
+  <app-checkbox></app-checkbox>
+  <app-checkbox></app-checkbox>
+</div>
+</div>
+<app-form></app-form>
