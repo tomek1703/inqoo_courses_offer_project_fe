@@ -1,4 +1,5 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Component, Input, ViewChild, AfterViewInit} from '@angular/core';
+import {CategoryPageComponent} from "../../category/category-page/category-page.component";
 
 @Component({
   selector: 'app-card',
@@ -9,5 +10,5 @@ export class CardComponent{
   @Input() title: String = "Test";
   @Input() description: String = "Test description";
 
-  bgImageVariable = 'url("../../../assets/card2.png")';
+  @Input() background: String = "url('../../assets/card1.jpg')";
 }

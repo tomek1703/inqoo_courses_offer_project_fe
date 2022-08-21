@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input, Output} from '@angular/core';
 import {MockCategories} from "../../shared/MockCategories";
 
 @Component({
@@ -7,28 +7,29 @@ import {MockCategories} from "../../shared/MockCategories";
   styleUrls: ['./category-page.component.scss']
 })
 export class CategoryPageComponent{
-public items: MockCategories[] = [{
+  public items: MockCategories[] = [{
   id: 0,
   title: "IT",
   description: "IT Desc",
-  background: "../../../assets/card1.jpg"
+  background: "url('../../assets/card1.jpg')"
 },
   {
     id: 1,
     title: "Sales",
     description: "sales desc",
-    background: "../../../assets/card2.png"
+    background: "url('../../assets/card2.png')"
   },
   {
     id: 2,
     title: "Marketing",
     description: "marketing desc",
-    background: "../../../assets/card3.jpg"
+    background: "url('../../assets/card3.jpg')"
   },
   {
     id: 3,
     title: "Other",
     description: "other desc",
-    background: "../../../assets/card4.jpg"
+    background: "url('../../assets/card4.jpg')"
   }];
+
 }
