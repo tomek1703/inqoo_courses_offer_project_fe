@@ -1,5 +1,9 @@
-<form class="mail-form">
+<div class="mail-form">
   <label >Email:</label>
-  <input type="email" id="email" pattern="^[a-zA-Z0-9.!#$%&’*+=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$" required>
+<!--  <input type="email" name="email" class="form-control"  [class.is-invalid] = "email.get('userEmail').invalid && email.get('userEmail').touched" formControlName="userEmail">-->
+<!--  <div *ngIf="(getUserEmail.invalid && getUserEmail.touched) || getUserEmail.dirty">-->
+<!--    <small *ngIf="getUserEmail.errors?.['required']" class="text-danger">Primary email is required</small>-->
+<!--    <small *ngIf="getUserEmail.errors?.['email']" class="text-danger">Please provide a valid email address</small>-->
+<!--  </div>-->
   <button type="submit" value="submit">Submit</button>
-</form>
+</div>
