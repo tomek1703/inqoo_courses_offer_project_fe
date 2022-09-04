@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-form',
@@ -8,11 +8,9 @@ import {FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/
 })
 export class FormComponent  {
   email = new FormGroup({
-userEmail: new FormControl('', [
-  Validators?.required,
-Validators?.email])});
+userEmail: new FormControl('', [Validators.required, Validators.email])});
 
 get getUserEmail(){
-  return this.email.get("userEmail");
+  return this.email.get("userEmail")!;
 }
 }

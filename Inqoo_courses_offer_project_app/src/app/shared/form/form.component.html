@@ -1,9 +1,13 @@
-<div class="mail-form">
-  <label >Email:</label>
-<!--  <input type="email" name="email" class="form-control"  [class.is-invalid] = "email.get('userEmail').invalid && email.get('userEmail').touched" formControlName="userEmail">-->
-<!--  <div *ngIf="(getUserEmail.invalid && getUserEmail.touched) || getUserEmail.dirty">-->
-<!--    <small *ngIf="getUserEmail.errors?.['required']" class="text-danger">Primary email is required</small>-->
-<!--    <small *ngIf="getUserEmail.errors?.['email']" class="text-danger">Please provide a valid email address</small>-->
-<!--  </div>-->
-  <button type="submit" value="submit">Submit</button>
+<div class="form-container">
+  <form [formGroup]="email" class="mail-form">
+    <label class="form-label" for="email">Email:</label>
+    <input id ="email" type="email" name="email" class="form-input" placeholder="Podaj swój email"
+           [class.is-invalid]="getUserEmail.invalid && getUserEmail.touched"
+           formControlName="userEmail">
+    <button class="btn btn-primary" type="submit" value="submit">Submit</button>
+  </form>
+  <div class="form-error" *ngIf="(getUserEmail.invalid && getUserEmail.touched) || getUserEmail.dirty">
+    <p *ngIf="getUserEmail.errors?.['required']" class="text-danger">Email address is required</p>
+    <p *ngIf="getUserEmail.errors?.['email']" class="text-danger">Please provide a valid email address</p>
+  </div>
 </div>
