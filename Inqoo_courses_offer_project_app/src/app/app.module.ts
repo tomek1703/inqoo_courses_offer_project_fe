@@ -11,6 +11,7 @@ import {SelectCourseModule} from "./select-course/select-course.module";
 import {HomePageModule} from "./home-page/home-page.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { KremowkaPageComponent } from './kremowka-page/kremowka-page.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { KremowkaPageComponent } from './kremowka-page/kremowka-page.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     NgbModule,
     SharedModule,

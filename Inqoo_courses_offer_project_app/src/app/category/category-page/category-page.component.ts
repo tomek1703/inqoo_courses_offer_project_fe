@@ -1,5 +1,7 @@
 import {Component, Input, Output} from '@angular/core';
-import {MockCategories} from "../../shared/MockCategories";
+import {RequestService} from "../../services/request.service";
+import {CategoryModel} from "./CategoryModel";
+import {delay, map} from "rxjs";
 
 @Component({
   selector: 'app-category-page',
@@ -7,29 +9,13 @@ import {MockCategories} from "../../shared/MockCategories";
   styleUrls: ['./category-page.component.scss']
 })
 export class CategoryPageComponent{
-  public items: MockCategories[] = [{
-  id: 0,
-  title: "IT",
-  description: "IT Desc",
-  background: "url('../../assets/card1.jpg')"
-},
-  {
-    id: 1,
-    title: "Sales",
-    description: "sales desc",
-    background: "url('../../assets/card2.jpg')"
-  },
-  {
-    id: 2,
-    title: "Marketing",
-    description: "marketing desc",
-    background: "url('../../assets/card3.jpg')"
-  },
-  {
-    id: 3,
-    title: "Other",
-    description: "other desc",
-    background: "url('../../assets/card4.png')"
-  }];
+  categories:CategoryModel[] = [];
+constructor(private service: RequestService) {}
+
+  ngOnInit(): void{
+  this.service.getRecords()
+    .subscribe((response: CategoryModel[]) =>console.log(response));
+
+  }
 
 }
