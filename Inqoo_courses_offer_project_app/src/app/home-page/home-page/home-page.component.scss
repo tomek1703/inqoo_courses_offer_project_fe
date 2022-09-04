@@ -1,4 +1,13 @@
-.centerr{
+.center{
   text-align: center;
   margin-top: 2em;
+}
+a.btn-primary{
+  display: block;
+  width: fit-content;
+  padding: .5em;
+  text-decoration: none;
+  margin: 0 auto;
+  box-sizing: border-box;;
+  border-radius: .3em;
 }

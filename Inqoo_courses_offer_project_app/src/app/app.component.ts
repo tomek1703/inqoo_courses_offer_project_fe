@@ -7,6 +7,7 @@ import {RoutesConfig} from "./app-routing.module";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
   title = 'Inqoo_courses_offer_project_app';
   routes: { label: string, route: string }[] = [
     {
@@ -24,4 +25,5 @@ export class AppComponent {
       route: RoutesConfig.summary
     },
     ];
+
 }

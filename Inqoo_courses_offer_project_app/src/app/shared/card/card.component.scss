@@ -1,3 +1,4 @@
+$link-color: #000;
 .card {
   width: 70vh;
   height: 70vh;
@@ -9,13 +10,13 @@
   background-size: auto;
   background-position: top;
   overflow: hidden;
-
 }
 
 .card:hover{
   transform: scale(1.1);
 }
 
-
-
-
+a{
+  color: $link-color;
+  text-decoration: none;
+}

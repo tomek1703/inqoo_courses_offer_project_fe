@@ -7,7 +7,9 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { FormComponent } from './form/form.component';
 import {RouterModule} from "@angular/router";
 import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
-import { BannerComponent } from './banner/banner.component';
+import {FooterComponent} from "./footer/footer.component";
+import {BannerComponent} from "./banner/banner.component";
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -19,21 +21,24 @@ import { BannerComponent } from './banner/banner.component';
     CheckboxComponent,
     FormComponent,
     BannerComponent,
+    FooterComponent
   ],
 
-    exports: [
-        NavBarComponent,
-        CardComponent,
-        ButtonComponent,
-        CheckboxComponent,
-        FormComponent,
-        BannerComponent
-    ],
+  exports: [
+    NavBarComponent,
+    CardComponent,
+    ButtonComponent,
+    CheckboxComponent,
+    FormComponent,
+    FooterComponent,
+    BannerComponent
+  ],
 
-    imports: [
-        CommonModule,
-        RouterModule,
-        NgbTooltipModule
-    ]
+  imports: [
+    CommonModule,
+    RouterModule,
+    NgbTooltipModule,
+    ReactiveFormsModule
+  ]
 })
 export class SharedModule { }

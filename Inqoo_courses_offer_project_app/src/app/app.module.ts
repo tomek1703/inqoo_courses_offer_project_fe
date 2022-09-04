@@ -9,10 +9,13 @@ import {CategoryModule} from "./category/category.module";
 import {SummaryModule} from "./summary/summary.module";
 import {SelectCourseModule} from "./select-course/select-course.module";
 import {HomePageModule} from "./home-page/home-page.module";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { KremowkaPageComponent } from './kremowka-page/kremowka-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    KremowkaPageComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,9 @@ import {HomePageModule} from "./home-page/home-page.module";
     CategoryModule,
     SummaryModule,
     SelectCourseModule,
-    HomePageModule
+    HomePageModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
