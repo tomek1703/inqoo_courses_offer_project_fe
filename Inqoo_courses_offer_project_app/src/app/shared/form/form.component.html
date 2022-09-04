@@ -1,7 +1,7 @@
 <div class="form-container">
   <form [formGroup]="email" class="mail-form">
     <label class="form-label" for="email">Email:</label>
-    <input id ="email" type="email" name="email" class="form-input" placeholder="Podaj swój email"
+    <input id ="email" type="email" name="email" class="form-input" placeholder="Enter the email address"
            [class.is-invalid]="getUserEmail.invalid && getUserEmail.touched"
            formControlName="userEmail">
     <button class="btn btn-primary" type="submit" value="submit">Submit</button>
