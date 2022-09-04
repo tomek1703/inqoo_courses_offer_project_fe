@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {RoutesConfig} from "./app-routing.module";
-import {FormControl, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-root',

@@ -10,7 +10,6 @@ export const enum RoutesConfig {
   category  = 'category-page',
   select = 'select-course',
   summary = 'summary',
-  inqooDeck = 'inqoo-deck',
   homePage= 'home-page'
 }
 

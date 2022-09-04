@@ -7,7 +7,7 @@
     <button class="btn btn-primary" type="submit" value="submit">Submit</button>
   </form>
   <div class="form-error" *ngIf="(getUserEmail.invalid && getUserEmail.touched) || getUserEmail.dirty">
-    <p *ngIf="getUserEmail.errors?.['required']" class="text-danger">Email address is required</p>
+    <p *ngIf="getUserEmail.errors?.['required']" class="text-danger">Primary email is required</p>
     <p *ngIf="getUserEmail.errors?.['email']" class="text-danger">Please provide a valid email address</p>
   </div>
 </div>

@@ -1,4 +1,5 @@
-import { Component} from '@angular/core';
+import {Component} from '@angular/core';
+import {RoutesConfig} from "../../app-routing.module";
 
 @Component({
   selector: 'app-home-page',
