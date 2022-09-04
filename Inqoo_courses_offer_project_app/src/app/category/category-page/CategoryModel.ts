@@ -1,6 +1,6 @@
 export interface CategoryModel{
-  name: String,
-  description: String,
-  categoryUUID: String,
-  background: String;
+  name: string,
+  description: string,
+  categoryUUID: string,
+  background: string;
 }

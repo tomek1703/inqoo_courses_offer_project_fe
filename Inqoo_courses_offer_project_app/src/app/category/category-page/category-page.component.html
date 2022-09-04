@@ -3,7 +3,7 @@
   *ngFor="let item of categories"
   [title]="item!.name"
   [description]="item!.description"
- [background]="item!.background">
+  [background]=" 'url(' + item!.background + ')'">
 
   </app-card>
 </div>

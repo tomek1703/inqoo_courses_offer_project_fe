@@ -14,7 +14,9 @@ constructor(private service: RequestService) {}
 
   ngOnInit(): void{
   this.service.getRecords()
-    .subscribe((response: CategoryModel[]) =>console.log(response));
+    .subscribe((response: CategoryModel[]) =>{this.categories = response;
+    console.log(response)
+    });
 
   }
 
