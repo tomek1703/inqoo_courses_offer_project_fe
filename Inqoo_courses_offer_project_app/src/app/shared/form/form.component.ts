@@ -7,10 +7,7 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent  {
-  email = new FormGroup({
-userEmail: new FormControl('', [Validators.required, Validators.email])});
 
-get getUserEmail(){
-  return this.email.get("userEmail")!;
-}
+userEmail= new FormControl('', [Validators.required, Validators.email]);
+
 }
