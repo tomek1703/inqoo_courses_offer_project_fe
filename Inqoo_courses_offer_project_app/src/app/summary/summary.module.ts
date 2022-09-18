@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SummaryComponent } from './summary/summary.component';
+import {SharedModule} from "../shared/shared.module";
 
 
 
@@ -8,8 +9,9 @@ import { SummaryComponent } from './summary/summary.component';
   declarations: [
     SummaryComponent
   ],
-  imports: [
-    CommonModule
-  ]
+    imports: [
+        CommonModule,
+        SharedModule
+    ]
 })
 export class SummaryModule { }

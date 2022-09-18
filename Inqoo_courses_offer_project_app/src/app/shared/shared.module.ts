@@ -6,10 +6,11 @@ import { ButtonComponent } from './button/button.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { FormComponent } from './form/form.component';
 import {RouterModule} from "@angular/router";
-import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
+import {NgbModule, NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
 import {FooterComponent} from "./footer/footer.component";
 import {BannerComponent} from "./banner/banner.component";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { DatepickerComponent } from './datepicker/datepicker.component';
 
 
 
@@ -32,14 +33,17 @@ import {ReactiveFormsModule} from "@angular/forms";
     CheckboxComponent,
     FormComponent,
     FooterComponent,
-    BannerComponent
+    BannerComponent,
+    DatepickerComponent
   ],
 
   imports: [
     CommonModule,
     RouterModule,
     NgbTooltipModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    NgbModule
   ]
 })
 export class SharedModule { }

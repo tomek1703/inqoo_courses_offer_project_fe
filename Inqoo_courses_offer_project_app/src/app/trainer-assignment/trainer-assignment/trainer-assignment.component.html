@@ -1,0 +1,17 @@
+<div class="container-lg">
+  <app-datepicker></app-datepicker>
+  <div *ngFor="let subs of subcats">
+
+    <div *ngFor="let course of subs.courses">
+      <h2>{{course.name}}</h2>
+      <p>{{course.price}}</p>
+      <p>{{course.time}}</p>
+      <div *ngFor="let trainer of trainers">
+        <h2>{{trainer.name}}</h2>
+        <ul *ngFor="let timeOf of trainer.timeOff">
+          <li>{{timeOf | date}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
