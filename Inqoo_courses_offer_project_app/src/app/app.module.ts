@@ -12,11 +12,14 @@ import {HomePageModule} from "./home-page/home-page.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { KremowkaPageComponent } from './kremowka-page/kremowka-page.component';
 import {HttpClientModule} from "@angular/common/http";
+import { TrainerAssignmentComponent } from './trainer-assignment/trainer-assignment/trainer-assignment.component';
+import {TrainerAssignmentModule} from "./trainer-assignment/trainer-assignment.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    KremowkaPageComponent
+    KremowkaPageComponent,
+    TrainerAssignmentComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import {HttpClientModule} from "@angular/common/http";
     SelectCourseModule,
     HomePageModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    TrainerAssignmentModule
   ],
   providers: [],
   bootstrap: [AppComponent]

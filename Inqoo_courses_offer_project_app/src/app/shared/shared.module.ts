@@ -21,7 +21,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     CheckboxComponent,
     FormComponent,
     BannerComponent,
-    FooterComponent
+    FooterComponent,
+    DatepickerComponent
   ],
 
   exports: [

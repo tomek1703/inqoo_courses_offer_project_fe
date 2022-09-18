@@ -6,13 +6,15 @@ import {SelectCoursePageComponent} from "./select-course/select-course-page/sele
 import {SummaryComponent} from "./summary/summary/summary.component";
 import {HomePageComponent} from "./home-page/home-page/home-page.component";
 import {KremowkaPageComponent} from "./kremowka-page/kremowka-page.component";
+import {TrainerAssignmentComponent} from "./trainer-assignment/trainer-assignment/trainer-assignment.component";
 
 export const enum RoutesConfig {
   category  = 'category-page',
   select = 'select-course',
   summary = 'summary',
   kremowka ='kremowka-page',
-  homePage= 'home-page'
+  homePage= 'home-page',
+  trainer= 'trainer-assignment'
 }
 
 const routes: Routes = [
@@ -21,6 +23,7 @@ const routes: Routes = [
   {path: RoutesConfig.select, component: SelectCoursePageComponent},
   {path: RoutesConfig.kremowka, component: KremowkaPageComponent},
   {path: RoutesConfig.summary, component: SummaryComponent},
+  {path: RoutesConfig.trainer, component:TrainerAssignmentComponent},
 
   {path: '', redirectTo: RoutesConfig.homePage, pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent},

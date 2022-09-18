@@ -1,9 +1,11 @@
 <div class="subCategory">
-<div *ngFor="let subCategory of subCategories">
-  <h2>{{subCategory.title}}</h2>
-  <app-checkbox *ngFor="let course of subCategory.courses"
-  [courseName]="course"
-  ></app-checkbox>
-</div>
+  <div *ngFor="let subCategory of subCategories">
+    <h2>{{subCategory.title}}</h2>
+    <app-checkbox *ngFor="let course of subCategory.courses"
+                  [courseName]="course.name"
+                  [selected]="course.selected"
+                  (selectCourse)="course.selected"
+    ></app-checkbox>
+  </div>
 </div>
 <app-form></app-form>
