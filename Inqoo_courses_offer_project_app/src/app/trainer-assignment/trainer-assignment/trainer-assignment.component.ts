@@ -3,6 +3,7 @@ import {Trainer} from "../../shared/Trainer";
 import {DatapassingService} from "../../services/datapassing.service";
 import {Course} from "../../shared/Course";
 import {SubCategory} from "../../shared/SubCategory";
+import {isEmpty} from "rxjs";
 
 @Component({
   selector: 'app-trainer-assignment',
@@ -17,8 +18,12 @@ export class TrainerAssignmentComponent implements OnInit{
 
   ngOnInit() {
   this.passService.currentCoursesState.subscribe(courses => this.subcats = courses);
+  if(this.subcats.length != 0){console.log("API WORKS");}
+  else {console.log("We,re screwed!");
+  console.log(this.subcats);
   }
-
+  }
+  subcats: SubCategory[] = [];
   public trainers: Trainer[] = [
     {
       id: 0,
@@ -37,5 +42,5 @@ export class TrainerAssignmentComponent implements OnInit{
     },
   ];
 
-  subcats: SubCategory[] = [];
-}
+  }
+

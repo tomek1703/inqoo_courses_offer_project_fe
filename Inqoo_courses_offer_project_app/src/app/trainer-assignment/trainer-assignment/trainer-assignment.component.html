@@ -1,8 +1,9 @@
 <div class="container-lg">
   <app-datepicker></app-datepicker>
   <div *ngFor="let subs of subcats">
-
     <div *ngFor="let course of subs.courses">
+      <div *ngIf="course.selected == false">
+      <h1>{{subs.title}}</h1>
       <h2>{{course.name}}</h2>
       <p>{{course.price}}</p>
       <p>{{course.time}}</p>
@@ -11,6 +12,7 @@
         <ul *ngFor="let timeOf of trainer.timeOff">
           <li>{{timeOf | date}}</li>
         </ul>
+      </div>
       </div>
     </div>
   </div>

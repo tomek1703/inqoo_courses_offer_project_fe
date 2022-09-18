@@ -15,9 +15,12 @@ export class SelectCoursePageComponent implements OnInit {
   ngOnInit() {
     this.passService.currentCoursesState.subscribe(courses => this.coursesToPass = courses);
   }
-
+  coursesToPass: SubCategory[]=[];
   submit() {
-    this.passService.updateCoursesState(this.coursesToPass);
+    console.log(this.subCategories);
+    const selectedCourses = this.subCategories;
+    this.passService.updateCoursesState(selectedCourses);
+    console.log("Przeszły" + selectedCourses);
   }
 
   public subCategories: SubCategory[] = [
@@ -81,10 +84,8 @@ export class SelectCoursePageComponent implements OnInit {
     }
 
   ]
-  coursesToPass: SubCategory[] = [];
 
 
-  checkAndAddCourses(){
 
-  }
+
 }
