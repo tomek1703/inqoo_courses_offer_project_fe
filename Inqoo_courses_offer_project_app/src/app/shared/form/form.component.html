@@ -4,7 +4,7 @@
     <input id ="email" type="email" name="email" class="form-input" [formControl]="userEmail" placeholder="Enter the email address"
            [class.is-invalid]="userEmail.invalid && userEmail.touched"
            formControlName="userEmail">
-    <button class="btn btn-primary" type="submit" value="submit">Submit</button>
+    <button class="btn btn-primary" type="submit" value="submit" [disabled]="userEmail.invalid">Submit</button>
   </form>
   <div class="form-error" *ngIf="(userEmail.invalid && userEmail.touched) || userEmail.dirty">
     <p *ngIf="userEmail.errors?.required" class="text-danger">Primary email is required</p>
