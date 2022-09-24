@@ -1,10 +1,11 @@
 <div class="grid-container">
+  <h2 class="category-header">Zapraszamy do zapoznania się z ofertą tematyczną naszych kursów</h2>
+
   <app-card
   *ngFor="let item of categories"
   [title]="item!.name"
   [description]="item!.description"
   [background]=" 'url(' + item!.background + ')'">
-
   </app-card>
 </div>
 

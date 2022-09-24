@@ -1,7 +1,7 @@
 <div class="subCategory">
   <div *ngFor="let subCategory of subCategories">
     <h2>{{subCategory.title}}</h2>
-    <app-checkbox *ngFor="let course of subCategory.courses"
+    <app-checkbox  *ngFor="let course of subCategory.courses"
                   [courseName]="course.name"
                   (selectCourse)="course.selected"
                   [selected]="course.selected"
@@ -9,6 +9,6 @@
   </div>
 </div>
 <div>
-  <a routerLink="../trainer-assignment" class="btn-primary" (click)="submit()" disabled="true">Next</a>
+  <a routerLink="../trainer-assignment" class="btn-primary" (click)="submit()" disabled="true">Dalej</a>
 </div>
 

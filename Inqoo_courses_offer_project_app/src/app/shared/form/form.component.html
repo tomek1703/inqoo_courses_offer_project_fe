@@ -1,10 +1,10 @@
 <div class="form-container">
   <form  class="mail-form">
     <label class="form-label" for="email">Email:</label>
-    <input id ="email" type="email" name="email" class="form-input" [formControl]="userEmail" placeholder="Enter the email address"
+    <input id ="email" type="email" name="email" class="form-input" [formControl]="userEmail" placeholder="Podaj swój email"
            [class.is-invalid]="userEmail.invalid && userEmail.touched"
            formControlName="userEmail">
-    <button class="btn btn-primary" type="submit" value="submit" [disabled]="userEmail.invalid || userEmail == null">Submit</button>
+    <button class="btn btn-dark" type="submit" value="submit" [disabled]="userEmail.invalid || userEmail == null">Wyślij</button>
   </form>
   <div class="form-error" *ngIf="(userEmail.invalid && userEmail.touched) || userEmail.dirty">
     <p *ngIf="userEmail.errors?.required" class="text-danger">Primary email is required</p>
