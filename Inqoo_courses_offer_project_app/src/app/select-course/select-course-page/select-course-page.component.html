@@ -1,4 +1,4 @@
-<div class="subCategory">
+<div class="container-fluid subCategory">
   <div *ngFor="let subCategory of subCategories">
     <h2>{{subCategory.title}}</h2>
     <app-checkbox  *ngFor="let course of subCategory.courses"
@@ -8,7 +8,7 @@
     ></app-checkbox>
   </div>
 </div>
-<div>
-  <a routerLink="../trainer-assignment" class="btn-primary" (click)="submit()" disabled="true">Dalej</a>
+<div class="container-fluid">
+  <a routerLink="../trainer-assignment" class="btn btn-primary justify-content-end" (click)="submit()" disabled="true">Dalej</a>
 </div>
 
