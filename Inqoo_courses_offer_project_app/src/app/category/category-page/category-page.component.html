@@ -5,7 +5,9 @@
   *ngFor="let item of categories"
   [title]="item!.name"
   [description]="item!.description"
-  [background]=" 'url(' + item!.background + ')'">
+  [background]=" 'url(' + item!.background + ')'"
+  (click)="sendUUID(item.categoryUUID)"
+  >
   </app-card>
 </div>
 
