@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {SubCategory} from "../../shared/SubCategory";
+import {SubCategory} from "../../models/SubCategory";
 import {DatapassingService} from "../../services/datapassing.service";
-import {Course} from "../../shared/Course";
+import {Course} from "../../models/Course";
 
 @Component({
   selector: 'app-select-course-page',
