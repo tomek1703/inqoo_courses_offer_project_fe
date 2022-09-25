@@ -2,14 +2,19 @@
   <div *ngFor="let subs of subcats">
     <div *ngFor="let course of subs.courses">
       <div *ngIf="course.selected == false">
-      <h2> {{subs.title}} {{course.name}}</h2>
-      <p>{{course.price}}</p>
-      <p>{{course.time}}</p>
+        <div class="card-deck col-md-2">
+        <div class="card">
+      <h3>Nazwa kursu: {{subs.title}}{{course.name}}</h3>
+      <p>Cena: {{course.price}}PLN</p>
+      <p>Czas trwania w godzinach: {{course.time}}</p>
       <div *ngFor="let trainer of trainers">
-        <h2>{{trainer.name}}</h2>
+        <h4>Prowadzący: {{trainer.name}}</h4>
+        <h4> Daty rozpoczęcia kursu:</h4>
         <ul *ngFor="let timeOf of trainer.timeOff">
           <li>{{timeOf | date}}</li>
         </ul>
+      </div>
+      </div>
       </div>
       </div>
     </div>
