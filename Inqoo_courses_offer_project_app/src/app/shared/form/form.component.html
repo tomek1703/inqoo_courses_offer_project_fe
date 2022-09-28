@@ -7,7 +7,7 @@
     <button class="btn btn-dark" type="submit" value="submit" [disabled]="userEmail.invalid || userEmail == null">Wyślij</button>
   </form>
   <div class="form-error" *ngIf="(userEmail.invalid && userEmail.touched) || userEmail.dirty">
-    <p *ngIf="userEmail.errors?.required" class="text-danger">Primary email is required</p>
-    <p *ngIf="userEmail.errors?.email" class="text-danger">Please provide a valid email address</p>
+    <p *ngIf="userEmail.errors?.required" class="col-lg-offset-0">Adres e-mail jest wymagany.</p>
+    <p *ngIf="userEmail.errors?.email" class="col-lg-offset-0">Prosimy o wprowadzenie poprawnego adresu e-mail.</p>
   </div>
 </div>

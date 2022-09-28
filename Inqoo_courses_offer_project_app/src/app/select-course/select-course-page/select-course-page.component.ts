@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {SubCategory} from "../../models/SubCategory";
 import {DatapassingService} from "../../services/datapassing.service";
 import {Course} from "../../models/Course";
+import {RequestService} from "../../services/request.service";
 
 @Component({
   selector: 'app-select-course-page',
@@ -9,12 +10,16 @@ import {Course} from "../../models/Course";
   styleUrls: ['./select-course-page.component.scss']
 })
 export class SelectCoursePageComponent implements OnInit {
-  constructor(private passService: DatapassingService) {
+  constructor(private passService: DatapassingService, private requestService: RequestService) {
   }
 
   ngOnInit() {
     this.passService.currentCoursesState.subscribe(courses => this.coursesToPass = courses);
+    this.passService.currentUUIDState.subscribe(uuid => this.uuid = uuid);
+    this.requestService.getSubs(this.uuid).subscribe(courses => this.subCategories = courses);
   }
+
+  uuid:string ="";
   coursesToPass: SubCategory[]=[];
   submit() {
     console.log(this.subCategories);
